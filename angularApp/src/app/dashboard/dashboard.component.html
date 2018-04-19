@@ -1,0 +1,4 @@
+<li *ngFor="let quote of data"> {{quote.quote}} / {{quote.author}} / votes: {{quote.votes}} <a [routerLink]="['edit',quote._id]">Edit</a>   <button (click)="upvoteQuote(quote._id)">Upvote</button>
+	<button (click)="devoteQuote(quote._id)">Devote</button> <button (click)="deleteQuote(quote._id)">Delete</button>
+
+</li>

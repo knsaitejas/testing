@@ -1,0 +1,5 @@
+<form (submit)='editQuote()'>
+	Quote: <input type="text" name="newQuote.quote" [(ngModel)]='newQuote.quote'>
+	Author: <input type="text" name="newQuote.author" [(ngModel)]='newQuote.author'>
+	<input type="submit" name="Cancel" value="Cancel" [routerLink]="['']"><input type="submit" name="Submit" (click)='updateTheQuote()'>
+</form>
